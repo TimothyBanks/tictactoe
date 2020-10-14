@@ -1,0 +1,121 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "close",
+            "base": "",
+            "fields": [
+                {
+                    "name": "challenger",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "challenger",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "game",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "challenger",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "system",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "next_key",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "welcome",
+            "base": "",
+            "fields": [
+                {
+                    "name": "challenger",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "close",
+            "type": "close",
+            "ricardian_contract": "---\title: Closes game\nsummary: Closes a new tic tac toe game.\n\n{{$clauses.legalese}}"
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": "---\title: Create game\nsummary: Creates a new tic tac toe game.\n\n{{$clauses.legalese}}"
+        },
+        {
+            "name": "welcome",
+            "type": "welcome",
+            "ricardian_contract": "---\ntitle: Welcome\nsummary: Greet the contract from \"{{user}}\"---\nI, {{user}}, greet this smart contract from my account \"{{user}}\".  I understand that this greeting may or may not be reciprocated.\n\n{{$clauses.legalese}}"
+        }
+    ],
+    "tables": [
+        {
+            "name": "games",
+            "type": "game",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "system",
+            "type": "system",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [
+        {
+            "id": "legalese",
+            "body": "WARRANTY..........."
+        }
+    ],
+    "variants": []
+}
