@@ -10,6 +10,7 @@ find_package(eosio REQUIRED)
 include(${EOSIO_CDT_REPO}/lib/cmake/eosio.cdt/EosioWasmToolchain.cmake)
 
 add_contract(tictactoe tictactoe tictactoe.cpp)
+add_contract(kvexample kvexample kv_example.cpp)
 
 message(STATUS "EOSIO_CDT_ROOT = ${EOSIO_CDT_ROOT}")
 
