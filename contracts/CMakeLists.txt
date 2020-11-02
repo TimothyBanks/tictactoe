@@ -7,7 +7,7 @@ set(EOSIO_WASM_OLD_BEHAVIOR "Off")
 find_package(eosio.cdt REQUIRED)
 find_package(eosio REQUIRED)
 
-include(${EOSIO_CDT_REPO}/lib/cmake/eosio.cdt/EosioWasmToolchain.cmake)
+include(${EOSIO_CDT_ROOT}/lib/cmake/eosio.cdt/EosioWasmToolchain.cmake)
 
 add_contract(tictactoe tictactoe tictactoe.cpp)
 add_contract(kvexample kvexample kv_example.cpp)
